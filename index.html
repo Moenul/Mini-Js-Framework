@@ -10,7 +10,12 @@
     <body>
         <div id="app">
             <h1>{{ message }}</h1>
-            <button onclick="updateMessage()">Change Message</button>
+            <input
+                type="text"
+                data-model="message"
+                placeholder="Type something..."
+            />
+            <button data-action="updateMessage">Change Message</button>
         </div>
 
         <script src="framework.js"></script>
